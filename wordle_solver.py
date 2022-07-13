@@ -93,6 +93,6 @@ while True:
     # Start over but only with possible words
     print(f'{len(possible_words)} possible words: {sorted(possible_words)}')
     words = possible_words
-    if len(words) == 1:
+    if len(words) == 1 and words[0] == guess:
         print('Congrats, you sneaky Wordle cheater!')
         break
